@@ -81,16 +81,16 @@ module fir
                 tap_Di = wdata;
             end
         end
-        if (arvalid && arready) begin
-            if (araddr == 12'h0) ap_config_next = {ap_config[2], 1'b0, ap_config[0]};
-        end
+        //if (arvalid && arready) begin
+        //    if (araddr == 12'h0) ap_config_next = {ap_config[2], 1'b0, ap_config[0]};
+        //end
         if ((state == s_out) && ss_tlast) ap_config_next = {1'b1, 1'b1, 1'b0};
     end
 
     always@(*) begin
         rdata_next = rdata;
         tap_r_addr = 12'hfff;
-        if (arvalid && arready) begin
+        if (arvalid) begin
             if (araddr == 12'h0) begin
                 rdata_next = {5'b0, ap_config};
             end

@@ -2,8 +2,8 @@
 # xsim v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Sun Oct 22 06:57:43 2023
-# Process ID: 160149
+# Start of session at: Sun Oct 22 07:57:58 2023
+# Process ID: 166945
 # Current directory: /home/ubuntu/caravel-soc_fpga-lab/lab-fir/fir
 # Command line: xsim -mode tcl -source {xsim.dir/fir_tb_elab/xsim_script.tcl}
 # Log file: /home/ubuntu/caravel-soc_fpga-lab/lab-fir/fir/xsim.log
@@ -18,17 +18,17 @@ run -all
 ----Start the data input(AXI-Stream)----
 ----Start the coefficient input(AXI-lite)----
  Check Coefficient ...
-OK: exp =           0, rdata =           x
-OK: exp =         -10, rdata =           x
-OK: exp =          -9, rdata =           x
-OK: exp =          23, rdata =           x
-OK: exp =          56, rdata =           x
-OK: exp =          63, rdata =           x
-OK: exp =          56, rdata =           x
-OK: exp =          23, rdata =           x
-OK: exp =          -9, rdata =           x
-OK: exp =         -10, rdata =           x
-OK: exp =           0, rdata =           x
+OK: exp =           0, rdata =           0
+OK: exp =         -10, rdata =         -10
+OK: exp =          -9, rdata =          -9
+OK: exp =          23, rdata =          23
+OK: exp =          56, rdata =          56
+OK: exp =          63, rdata =          63
+OK: exp =          56, rdata =          56
+OK: exp =          23, rdata =          23
+OK: exp =          -9, rdata =          -9
+OK: exp =         -10, rdata =         -10
+OK: exp =           0, rdata =           0
  Tape programming done ...
  Start FIR
 ----End the coefficient input(AXI-lite)----
@@ -634,9 +634,9 @@ OK: exp =           0, rdata =           x
 OK: exp =           0, rdata =           0
 [PASS] [Pattern        599] Golden answer:        -915, Your answer:        -915
 OK: exp =           2, rdata =           6
-ERROR: exp =           4, rdata =           0
+OK: exp =           4, rdata =           6
 ---------------------------------------------
 -----------Congratulations! Pass-------------
 $finish called at time : 84915 ns : File "/home/ubuntu/caravel-soc_fpga-lab/lab-fir/fir/tb/fir_tb.v" Line 197
 exit
-INFO: [Common 17-206] Exiting xsim at Sun Oct 22 06:57:47 2023...
+INFO: [Common 17-206] Exiting xsim at Sun Oct 22 07:58:02 2023...
